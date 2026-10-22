@@ -1,0 +1,26 @@
+project:
+  name: Glic Project
+  local_path: null
+
+github:
+  owner: "CONFIGURAR_ORGANIZACAO"
+  repo: "CONFIGURAR_REPOSITORIO"
+  ref: null
+  timeout_seconds: 20
+
+rag:
+  enabled: true
+  provider: local
+  model: feature-hashing-v1
+  embedding_dimensions: 384
+  store_path: a_core/rag/store
+  chunk_size: 800
+  chunk_overlap: 120
+  top_k: 5
+  min_score: 0.05
+  max_file_size_kb: 256
+
+paths:
+  knowledge: a_core/rag/knowledge
+  workspace_input: c_workspace/ws_input
+  workspace_output: c_workspace/ws_output

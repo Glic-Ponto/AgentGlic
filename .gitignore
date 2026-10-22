@@ -1,0 +1,39 @@
+# Credenciais e variáveis locais
+.env
+.env.*
+!.env.example
+
+# Índice local do RAG
+a_core/rag/store/*
+!a_core/rag/store/.gitkeep
+
+# Workspace de entrada e saída
+c_workspace/ws_input/*
+!c_workspace/ws_input/.gitkeep
+c_workspace/ws_output/*
+!c_workspace/ws_output/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*~
